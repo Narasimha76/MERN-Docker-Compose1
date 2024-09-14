@@ -19,7 +19,7 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
-    network:
+    networks:
       - mern
     volumes:
       - mongo-volume:/data/db
